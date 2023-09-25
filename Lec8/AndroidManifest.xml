@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Homework"
+        tools:targetApi="31">
+        <receiver
+            android:name="lec8.receiver.ExplicitReceiver"
+            android:enabled="true"
+            android:exported="false" />
+        <activity
+            android:name="lec8.BroadCastActivity"
+            android:exported="true"
+            android:label="@string/title_activity_broad_cast"
+            android:theme="@style/Theme.Homework">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="test.MainActivity"
+            android:exported="false"
+            android:label="@string/title_activity_main"
+            android:theme="@style/Theme.Homework" />
+        <activity
+            android:name="lec7.TestActivity"
+            android:exported="false"
+            android:label="Test Activity"
+            android:theme="@style/Theme.Homework" />
+        <activity
+            android:name="lec7.MainLec7Activity"
+            android:exported="false"
+            android:label="@string/title_activity_main_lec7"
+            android:theme="@style/Theme.Homework" >
+            <intent-filter>
+                <action android:name="android.intent.action." />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Homework" />
+        <activity
+            android:name="lec4.MainLec4Activity"
+            android:exported="false"
+            android:label="Lec4"
+            android:theme="@style/Theme.Homework" />
+    </application>
+
+</manifest>

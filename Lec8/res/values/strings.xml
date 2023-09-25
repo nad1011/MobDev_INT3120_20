@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">homework</string>
+    <string name="title_activity_main_lec7">MainLec7Activity</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_broad_cast">BroadCastActivity</string>
+    <string name="title_activity_clock">ClockActivity</string>
+</resources>
